@@ -4,6 +4,6 @@ node{
     }
     stage('Compile-Package'){
       def mvnHome=tool name: 'maven', type: 'maven'
-      sh '${mvnHome}/maven_testing/DivAndMul/Calculator/pom.xml clean install'
+      sh '${mvnHome}/bin/mvn clean'
     }
 }
